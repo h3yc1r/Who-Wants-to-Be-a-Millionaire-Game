@@ -1,0 +1,145 @@
+#Who Wants to Be a Millionaire?
+#Author: Hacer AFLAZ
+
+
+ #Create the lists.
+categori=["categori1", "categori2"]
+categori1='literature'
+categori2='history'
+literature_questions=["1- Due to the deaths of many poets and writers in that month, which month is mentioned in the poem titled 'Haziranda ölmek zor'?","2- Which Goethe novel, which affects society by causing many young people to commit suicide due to lovesickness, is in Europe?","Who is the poet who wrote the poem 'Güneşi İçenlerin Türküsü'?",
+"4- Which poet died by falling into a municipal pit?","'Mona Rosa,' which is one of the classics of Turkish poetry, belongs to which poet?"]
+answers=[["a)mart","b)temmuz","haziran"], ["a)Genç Wertherin acıları","b)intibah","c) kutadgu bilig "],["a)Nazım Hikmet","b)Orhan pamuk", "c)Orhan veli kanık"],["a)Nazım Hikmet","b)Orhan veli kanık", "c)Sabahattin Ali"], ["a)Sezai Karakoç","b)Sabahhtin ali","c)Orhan veli kanık"]]
+corrects=["c","a","a","b","a"]
+
+history_questions=["1- Who is the author of the quote, 'If there was only one country in the world, its capital would be Istanbul'?","2- During which sultan's reign did the Ekber and Erşed system begin to be implemented?","3- In which year did the Nobel Prize start being awarded?",
+"4- What is the name of the first mesnevi in Turkish literature and who wrote it?"," 5- Which tribe does Osman Gazi, the founder of the Ottoman Empire, belong to?"]
+h_answers=[["a)bonaparte","b)Abdülhamid","Nasreddin Hoca"], ["a)1.Ahmed","b)Kanuni","c)Yavuz Sultan Selim "],["a) 1901","b)1903", "c)1908"],["a)Nazım Hikmet","b)Yusuf Has Hacip", "c)Sabahattin Ali"], ["a)moğol","b)Üçok","c)Kayı"]]
+h_corrects=["a","a","a","b","c"]
+
+
+choose=input("Welcome to 'Who Wants to Be a Millionaire?' In which category would you like to compete?")
+money=0
+
+ #Begin to game 
+if choose=='1':
+    for i in literature_questions:
+
+        print(literature_questions[0])
+        print(answers[0])
+        answer=input("Enter your answer: ")
+ 
+
+        if answer!=corrects[0]:
+            print("Wrong answer.It's done")
+            break
+        else:
+            money=+100
+            print("Correct answer. You have ", money ," tl.")
+            
+                
+        print(literature_questions[1])
+        print(answers[1])
+        answer=input("Enter your answer: ")
+
+        if answer!=corrects[1]:
+            print("YWrong answer.It's done")
+            break
+        else:
+            money+=100
+            print("Correct answer. You have ", money ," tl.")    
+
+        print(literature_questions[2])
+        print(answers[2])
+        answer=input("Enter your answer: ") 
+
+        if answer!=corrects[2]:
+            print("Wrong answer.It's done")
+            break
+        else:
+            money+=100
+            print("rrect answer. You have ", money ," tl.")  
+
+        print(literature_questions[3])
+        print(answers[3])
+        answer=input("Enter your answer: ") 
+
+        if answer!=corrects[3]:
+            print("Wrong answer.It's done.")
+            break
+        else:
+            money+=100
+            print("rrect answer. You have ", money ," tl.")   
+
+        print(literature_questions[4])
+        print(answers[4])
+        answer=input("Enter your answer: ")
+
+        if answer!=corrects[4]:
+            print("Wrong answer.It's done")
+            break
+        else:
+            money+=100
+            print("Correct answer. You have ", money ," tl.")
+            break
+
+elif choose=='2':
+    for i in history_questions: 
+        kontrol=0
+    
+        print(history_questions[0])
+        print(h_answers[0])
+        answer=input("Enter your answer: ")
+ 
+
+        if answer!=h_corrects[0]:
+            print("Wrong answer.It's done")
+            break
+        else:
+            money=+100
+            print("Correct answer. You have ", money ," tl.")
+            
+                
+        print(history_questions[1])
+        print(h_answers[1])
+        answer=input("Enter your answer: ")
+
+        if answer!=h_corrects[1]:
+            print("YWrong answer.It's done")
+            break
+        else:
+            money+=100
+            print("Correct answer. You have ", money ," tl.")    
+
+        print(history_questions[2])
+        print(h_answers[2])
+        answer=input("Enter your answer: ") 
+
+        if answer!=h_corrects[2]:
+            print("Wrong answer.It's done")
+            break
+        else:
+            money+=100
+            print("rrect answer. You have ", money ," tl.")  
+
+        print(history_questions[3])
+        print(h_answers[3])
+        answer=input("Enter your answer: ") 
+
+        if answer!=h_corrects[3]:
+            print("Wrong answer.It's done.")
+            break
+        else:
+            money+=100
+            print("rrect answer. You have ", money ," tl.")   
+
+        print(history_questions[4])
+        print(h_answers[4])
+        answer=input("Enter your answer: ")
+
+        if answer!=h_corrects[4]:
+            print("Wrong answer.It's done")
+            break
+        else:
+            money+=100
+            print("Correct answer. You have ", money ," tl.")
+            break
